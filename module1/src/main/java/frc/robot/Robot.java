@@ -10,7 +10,9 @@ import edu.wpi.first.wpilibj.xrp.XRPServo;
 
 public class Robot extends TimedRobot {
   // Define Objects here!
-  XRPMotor leftMotor = new XRPMotor(0);
+  XRPServo serveArm = new XRPServo(4);
+
+
   
 
 
@@ -19,6 +21,9 @@ public class Robot extends TimedRobot {
 
   public void teleopPeriodic() {
     // Call Methods here!
+   
+    serveArm.setAngle(45);
+
 
 
 
